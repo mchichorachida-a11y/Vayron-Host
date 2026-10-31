@@ -248,7 +248,29 @@ footer{
   <button onclick="logoutAccount()">تسجيل الخروج</button>
 
   <p id="authMessage"></p>
+<section id="account">
+  <h2>إنشاء حساب في VAYRON HOST</h2>
+
+  <form onsubmit="createAccount(event)">
+    <label>اسمك في الاستضافة:</label>
+    <input type="text" id="hostName" required placeholder="أدخل اسمك">
+
+    <label>البريد الإلكتروني:</label>
+    <input type="email" id="hostEmail" required placeholder="أدخل بريدك الإلكتروني">
+
+    <button class="btn" type="submit">إنشاء حساب</button>
+  </form>
+
+  <p id="accountMessage"></p>
 </section>
+
+<script>
+function createAccount(event) {
+  event.preventDefault();
+  document.getElementById("accountMessage").textContent =
+    "تم استلام معلوماتك بنجاح.";
+}
+</script>
 <section id="about">
  <h2>من نحن؟</h2>
  <p class="section-text">
