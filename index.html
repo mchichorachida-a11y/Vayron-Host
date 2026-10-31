@@ -236,7 +236,19 @@ footer{
  </form>
  <p id="message"></p>
 </section>
+<section id="account" class="account-section">
+  <h2>حسابك في VAYRON HOST</h2>
+  <p>أنشئ حساباً جديداً أو سجّل الدخول إلى حسابك.</p>
 
+  <input type="email" id="authEmail" placeholder="البريد الإلكتروني">
+  <input type="password" id="authPassword" placeholder="كلمة المرور">
+
+  <button onclick="registerAccount()">إنشاء حساب</button>
+  <button onclick="loginAccount()">تسجيل الدخول</button>
+  <button onclick="logoutAccount()">تسجيل الخروج</button>
+
+  <p id="authMessage"></p>
+</section>
 <section id="about">
  <h2>من نحن؟</h2>
  <p class="section-text">
