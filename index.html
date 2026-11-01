@@ -317,6 +317,27 @@ function sendOrder(event){
     <div class="feature"><h3>النسخ الاحتياطي</h3><p>حفظ نسخ الخادم</p></div>
     <div class="feature"><h3>الإعدادات</h3><p>إعدادات Minecraft</p></div>
   </div>
+ <div class="feature">
+  <h3>إدارة الإضافات (Plugins)</h3>
+
+  <label>إصدار Minecraft</label>
+  <select id="mcVersion">
+    <option>1.21.11</option>
+    <option>1.21.10</option>
+    <option>1.21.8</option>
+    <option>1.20.4</option>
+  </select>
+
+  <label>نوع الخادم</label>
+  <select id="mcSoftware">
+    <option>Paper</option>
+  </select>
+
+  <label>رفع إضافة</label>
+  <input type="file" accept=".jar" id="pluginFile">
+
+  <p id="pluginMessage">لم يتم ربط مدير الإضافات بالخادم بعد.</p>
+   </div>
 </section>
 
 <script>
