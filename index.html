@@ -288,10 +288,9 @@ function createAccount(event) {
 
 <script>
 function choose(plan){
- document.getElementById("selected").textContent=plan;
- const order=document.getElementById("order");
- order.style.display="block";
- order.scrollIntoView({behavior:"smooth"});
+ const panel = document.getElementById("serverPanel");
+ panel.style.display = "block";
+ panel.scrollIntoView({behavior:"smooth"});
 }
 
 function sendOrder(event){
