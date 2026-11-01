@@ -300,7 +300,31 @@ function sendOrder(event){
  "هذا نموذج تجريبي. لم يتم إرسال الطلب لأن نظام الطلبات لم يتم ربطه بعد.";
 }
 </script>
+<section id="serverPanel" style="display:none;background:#10182a;padding:30px 7%;text-align:center">
+  <h2>لوحة تحكم الخادم</h2>
+  <p>إدارة خادم Minecraft الخاص بك</p>
 
+  <h3>حالة الخادم: <span id="serverStatus">متوقف</span></h3>
+
+  <button class="btn" onclick="serverAction('شغال')">تشغيل</button>
+  <button class="btn" onclick="serverAction('متوقف')">إيقاف</button>
+  <button class="btn" onclick="serverAction('يعاد تشغيله')">إعادة التشغيل</button>
+
+  <div class="features">
+    <div class="feature"><h3>وحدة التحكم</h3><p>إدارة أوامر الخادم</p></div>
+    <div class="feature"><h3>الإضافات</h3><p>إدارة Plugins</p></div>
+    <div class="feature"><h3>الملفات</h3><p>إدارة ملفات الخادم</p></div>
+    <div class="feature"><h3>اللاعبون</h3><p>إدارة اللاعبين</p></div>
+    <div class="feature"><h3>النسخ الاحتياطي</h3><p>حفظ نسخ الخادم</p></div>
+    <div class="feature"><h3>الإعدادات</h3><p>إعدادات Minecraft</p></div>
+  </div>
+</section>
+
+<script>
+function serverAction(status) {
+  document.getElementById("serverStatus").textContent = status;
+}
+</script>
 </body>
   </html>
   
